@@ -1,5 +1,6 @@
 .ui.segment
-	background white
+	&:not(.inverted)
+		background white
 
 .masthead
 	&.segment
@@ -29,6 +30,9 @@
 		font-weight normal
 	p
 		color darkblue
+	#pages .item
+		font-weight bold
+		color midnightblue
 
 .ui
 	&.vertical
@@ -68,10 +72,6 @@
 
 .secondary .pointing .menu .toc .item
 	display none
-
-#topnav
-	& > *
-		color steelblue
 
 @media only screen and (max-width: 700px)
 	.ui

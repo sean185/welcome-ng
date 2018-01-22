@@ -2,13 +2,13 @@
     .ui.text.container
         h1.ui.header Hi, I'm Sean
         h2 I gravitate toward multi-disciplinary intersections
-        p Photography | Design | Psychology | Mathematics | Computing | Physics
+        //- p Photography | Design | Psychology | Mathematics | Computing | Physics
         .ui.divider
-        .ui.five.item.large.secondary.menu.stackable
-            a.item About
-            a.item UI / UX Design
-            a.item Backend
-            a.item Photography
+        #pages.ui.four.item.huge.secondary.menu.stackable
+            a.item(routerLink="/about") About
+            a.item(routerLink="/uiux") UI / UX Design
+            a.item(routerLink="/backend") Backend
+            a.item(routerLink="/photos") Photography
 .ui.vertical.stripe.quote.segment
     .ui.equal.width.stackable.internally.celled.grid
         .center.aligned.row
