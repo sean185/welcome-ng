@@ -23,26 +23,42 @@
                 br
                 p I am a generalist, capable of being specialist when necessary, whilst melding cross-domain knowledge to aid in problem solving.
 .ui.vertical.stripe.segment
-    .ui.text.container
-        h3.ui.header Breaking The Grid, Grabs Your Attention
-        p
-            | Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.
-        a.ui.large.button Read More
-        h4.ui.horizontal.header.divider
-            a(href='#') Case Studies
-        h3.ui.header Did We Tell You About Our Bananas?
-        p
-            | Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.
-        a.ui.large.button I'm Still Quite Interested
+    .ui.container
+        h3.ui.header Projects I've worked on
+        .ui.three.cards
+            .card
+                .content
+                    .header HH
+                    .meta July 2015
+                    .description
+                        p Bacon ipsum dolor amet turkey ribeye venison meatloaf chuck kevin shoulder. Salami biltong cupim pig jowl, porchetta bresaola frankfurter. Ball tip corned beef turducken hamburger. Pork chop jerky t-bone pork loin jowl cow cupim doner swine biltong ribeye sausage rump shoulder. Ground round brisket cow ham pork chop sirloin jowl. Alcatra tail ground round, spare ribs pastrami short ribs shankle rump meatball ham drumstick turducken bacon pork loin. Flank kielbasa filet mignon, pig ribeye beef frankfurter.
+            .card
+                .content
+                    .header Thing 2
+                    .meta July 2015
+                    .description
+                        p Leberkas hamburger ball tip, porchetta biltong fatback chicken bacon chuck short ribs ground round prosciutto bresaola beef ribs capicola. Beef swine capicola tenderloin prosciutto ground round. Beef ribs kevin sirloin t-bone ribeye pastrami meatball doner strip steak jerky buffalo pork. Pork belly flank turkey beef ribs pastrami, ribeye bacon pancetta andouille biltong chuck ham shankle. Shank meatloaf short ribs jowl ham venison, hamburger buffalo chicken pancetta meatball shoulder cow.
+            .card
+                .content
+                    .header Thing 3
+                    .meta July 2015
+                    .description
+                        p Pork loin corned beef biltong, buffalo jerky sirloin shank kielbasa pork belly sausage bresaola short loin. Meatloaf boudin pig shank beef ribs rump. Filet mignon pig frankfurter turducken brisket pancetta short ribs t-bone tenderloin. Corned beef strip steak boudin hamburger pork loin jerky, ham jowl. Bresaola flank pork belly kielbasa chicken shank leberkas ball tip tri-tip short loin swine filet mignon turducken turkey.
+
+        h3.ui.header Competencies
+        .ui.small.images
+            a.ui.image(*ngFor='let brand of brands' href='{{brand.link}}')
+                img(src='{{brand.src}}')
+
 .ui.inverted.vertical.footer.segment
     .ui.container
-        .ui.stackable.inverted.divided.equal.height.stackable.grid
-            .three.wide.column
-                h4.ui.inverted.header This is a footer!
-                .ui.inverted.link.list
-                    a.item.active Home
-                    a.item About Me
-                    a.item UI / UX Design
-                    a.item Backend
-                    a.item Photography
-                    a.item Contact
+        h3.ui.inverted.header Here already?
+            .sub.header Check out one of these
+        br
+        .ui.divider
+        #pages.ui.four.item.huge.secondary.menu.inverted.stackable
+            a.item(routerLink="/about") About
+            a.item(routerLink="/uiux") UI / UX Design
+            a.item(routerLink="/backend") Backend
+            a.item(routerLink="/photos") Photography
+        .ui.divider
