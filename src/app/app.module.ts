@@ -8,12 +8,20 @@ import { AppComponent } from './app.component';
 import { BasicRoutingModule } from './basic-routing.module';
 import { LandingComponent } from './landing/landing.component';
 import { OverlayComponent } from './overlay/overlay.component';
+import { AboutComponent } from './about/about.component';
+import { SnippetsComponent } from './snippets/snippets.component';
+import { PhotographyComponent } from './photography/photography.component';
+import { DesignComponent } from './design/design.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
-    OverlayComponent
+    OverlayComponent,
+    AboutComponent,
+    SnippetsComponent,
+    PhotographyComponent,
+    DesignComponent
   ],
   imports: [
     BrowserModule,
