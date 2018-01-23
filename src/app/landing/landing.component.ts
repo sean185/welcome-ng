@@ -104,7 +104,6 @@ export class LandingComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.brands)
   }
 
 }

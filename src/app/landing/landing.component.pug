@@ -1,7 +1,7 @@
 .ui.vertical.masthead.center.aligned.segment
     .ui.text.container
         h1.ui.header Hi, I'm Sean
-        h2 I gravitate toward multi-disciplinary intersections
+        h2 I gravitate toward multidisciplinary intersections
         //- p Photography | Design | Psychology | Mathematics | Computing | Physics
         .ui.divider
         #pages.ui.four.item.huge.secondary.menu.stackable
@@ -9,6 +9,7 @@
             a.item(routerLink="/uiux") UI / UX Design
             a.item(routerLink="/backend") Backend
             a.item(routerLink="/photos") Photography
+        .ui.divider
 .ui.vertical.stripe.quote.segment
     .ui.equal.width.stackable.internally.celled.grid
         .center.aligned.row
@@ -23,9 +24,10 @@
                 br
                 p I am a generalist, capable of being specialist when necessary, whilst melding cross-domain knowledge to aid in problem solving.
 .ui.vertical.stripe.segment
+    h3.ui.center.aligned.header Projects I've worked on
+    .ui.hidden.divider
     .ui.container
-        h3.ui.header Projects I've worked on
-        .ui.three.cards
+        .ui.three.stackable.cards
             .card
                 .content
                     .header HH
@@ -45,8 +47,11 @@
                     .description
                         p Pork loin corned beef biltong, buffalo jerky sirloin shank kielbasa pork belly sausage bresaola short loin. Meatloaf boudin pig shank beef ribs rump. Filet mignon pig frankfurter turducken brisket pancetta short ribs t-bone tenderloin. Corned beef strip steak boudin hamburger pork loin jerky, ham jowl. Bresaola flank pork belly kielbasa chicken shank leberkas ball tip tri-tip short loin swine filet mignon turducken turkey.
 
-        h3.ui.header Competencies
-        .ui.small.images
+.ui.vertical.stripe.segment
+    h3.ui.center.aligned.header Competencies
+    .ui.hidden.divider
+    .ui.text.container
+        .ui.tiny.images
             a.ui.image(*ngFor='let brand of brands' href='{{brand.link}}')
                 img(src='{{brand.src}}')
 
@@ -61,4 +66,5 @@
             a.item(routerLink="/uiux") UI / UX Design
             a.item(routerLink="/backend") Backend
             a.item(routerLink="/photos") Photography
+            a.item(routerLink="/contact") Contact
         .ui.divider
