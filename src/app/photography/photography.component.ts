@@ -22,12 +22,12 @@ export class PhotographyComponent implements OnInit {
     this.photos = [
       {
         caption: 'Olive-backed sunbird in midflight, with just enough light from the morning sun.',
-        location: 'Singapore',
+        location: 'Pulau Ubin, Singapore',
         src: '/assets/photos/ubin-sunbird.jpg'
       },
       {
-        caption: 'Open women\'s category competitor getting chalked up.',
-        location: 'Singapore',
+        caption: 'Pumpfest 2017 - Open women\'s category competitor getting chalked up.',
+        location: 'Tampines, Singapore',
         src: '/assets/photos/pumpfest-2017-chalk-dust.jpg'
       },
       {
